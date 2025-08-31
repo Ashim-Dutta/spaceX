@@ -55,11 +55,10 @@ export default function UpcomingLaunches() {
             <h2 className="text-lg font-semibold mb-1 text-center">
               {launch.name}
             </h2>
-            <h1 className="uppercase ">Flight Number : { launch.flight_number}</h1>
+            <h1 className="uppercase flex justify-center">Flight Number : { launch.flight_number}</h1>
             <p className="text-gray-400 text-sm text-center mb-2">
               {new Date(launch.date_utc).toLocaleString()}
             </p>
-
             {/* Video */}
             {launch.links.youtube_id ? (
               <div className="aspect-video mt-3">
